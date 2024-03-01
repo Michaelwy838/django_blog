@@ -1,0 +1,134 @@
+body{
+    background-color: #eee;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.wrapper{
+    max-width: 960px;
+    margin: 40px auto;
+}
+nav{
+    max-width: 960px;
+    margin: 0 auto;  
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    border-bottom: 1px solid black;
+
+}
+nav h1{
+    font-size: 40px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+span{
+    background: black;
+    color: white;
+}
+.posts_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.post{
+    border: 1px solid rgb(0, 172, 232);
+    padding: 10px;
+    position: relative;
+}
+.login{
+    color: rgb(0, 172, 232);
+    border: 1px solid rgb(0, 172, 232);
+    border-radius: 5px;
+    margin-right: 20px;
+    padding: 8px 10px;
+    margin-left: 20px;
+}
+.login:hover{
+    background: rgb(0, 172, 232);
+    color: white;
+    transition: 0.3s ease-in;
+}
+.author{
+    position: absolute;
+    background: rgb(0, 172, 232);
+    color: white;
+    padding: 8px 20px;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+}
+ul{
+    display: flex;
+    align-items: center;
+}
+.create{
+    margin-right: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.logout{
+    color: red;
+    padding: 8px 12px;
+    border: 1px solid red;
+    background: none;
+    cursor: pointer;
+}
+.logout:hover{
+    background: red;
+    color: white;
+    transition: 0.3s ease-in;
+}
+li{
+    list-style-type: none;
+}
+.greet{
+    font-size: 25px;
+    margin-right: 20px;
+    color: gray;
+}
+.errorlist{
+    padding: 0;
+    margin: 5px 0;
+    color: red;
+}
+.django_form, .wrapper h1{
+    max-width: 60%;
+    margin: 0 auto;
+    border-box: box-sizing;
+}
+.django_form input, textarea, password, label, select{
+    width: 100%;
+    display: block;
+}
+.django_form input[type = 'text', type = 'password']{
+    padding-left: 10px;
+    border-box: box-sizing;
+
+}
+label, textarea{
+    margin-top: 20px;
+}
+.django_form input, select{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+.django_form textarea{
+    margin-bottom: 20px;
+}
+.django_form input[type = 'submit']{
+    background: rgb(0, 172, 232);
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.django_form span{
+    display: none;
+}
+.wrapper h1{
+    margin-bottom: 20px;
+}

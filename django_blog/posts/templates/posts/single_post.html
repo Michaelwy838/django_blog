@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block content %}
+{% load static %}
+    <div class="post_details">        
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.body }}</p>
+        <p>By - {{ post.author }}</p>
+        <p>{{ post.category }}</p>
+        <p>On {{ post.date }}</p>
+    </div>
+
+{% endblock %}
